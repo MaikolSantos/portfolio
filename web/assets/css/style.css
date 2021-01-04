@@ -110,6 +110,7 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     align-self: center;
+    flex: 1 1 255px;
 }
 
 .intro h1 {
@@ -148,9 +149,10 @@ header {
 }
 
 .img-intro {
-   flex: 2;
+   flex: 2 1 400px;
    align-self: flex-end;
    max-width: 800px;
+   margin-left: 50px;
 }
 
 .img-intro img {
@@ -158,7 +160,7 @@ header {
 }
 
 .footer {
-    margin-top: 110px;
+    margin-top: 105px;
     color: var(--third-grey);
 }
 
