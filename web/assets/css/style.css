@@ -1,0 +1,79 @@
+:root {
+    --orange: #FAA825;
+    --primary-grey: #2F2E41;
+    --second-grey: #3F3D56;
+    --third-grey: #8f8da0;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Estilos gerais */
+
+header {
+    border-bottom: 1px solid var(--third-grey);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu li {
+    padding: 10px;
+    margin: 10px 30px;
+}
+
+.menu ul li a {
+    color: black;
+    letter-spacing: .05em;
+    font-size: 1.25em;
+}
+
+.menu a:hover {
+    color: var(--orange);
+}
+
+
+
