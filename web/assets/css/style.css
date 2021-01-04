@@ -1,5 +1,7 @@
 :root {
-    --orange: #FAA825;
+    --primary-orange: #FAA825;
+    --second-orange: #e79a1f;
+    --third-orange: #ffb133;
     --primary-grey: #2F2E41;
     --second-grey: #3F3D56;
     --third-grey: #8f8da0;
@@ -17,6 +19,7 @@ h1, h2, p, ul, li, a {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 ul {
@@ -34,13 +37,15 @@ img {
 
 /* Estilos gerais */
 
-header {
-    border-bottom: 1px solid var(--third-grey);
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
+/* Header */
+
+header {
+    border-bottom: 1px solid var(--third-grey);
 }
 
 .header {
@@ -61,7 +66,7 @@ header {
 }
 
 .menu li {
-    padding: 10px;
+    padding: 5px;
     margin: 10px 30px;
 }
 
@@ -69,11 +74,91 @@ header {
     color: black;
     letter-spacing: .05em;
     font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px;
 }
 
 .menu a:hover {
-    color: var(--orange);
+    color: var(--primary-orange);
 }
 
+.btn {
+    color: white;
+    font-weight: bold;
+    font-size: 1.75em;
+    padding: 20px 45px;
+    background: var(--primary-orange);
+    border-radius: 10px;
+    max-width: 200px;
+    text-align: center;
+}
 
+.btn:hover {
+    background: var(--third-orange);
+}
+
+/* Introdução Home */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+
+}
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: center;
+}
+
+.intro h1 {
+    font-size: 3em;
+    font-weight: bold;
+    max-width: 470px;
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    color: var(--second-grey);
+    font-weight: normal;
+    font-size: 2.25em;
+}
+
+.btns-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 425px;
+    margin-top: 90px;
+}
+
+.btns-intro .btn-raw {
+    color: black;
+    border: 1px solid var(--primary-grey);
+    background-color: white;
+
+}
+
+.btns-intro .btn-raw:hover {
+    color: var(--primary-orange);
+    border: 1px solid var(--primary-orange);
+    background-color: white;
+}
+
+.img-intro {
+   flex: 2;
+   align-self: flex-end;
+   max-width: 800px;
+}
+
+.img-intro img {
+    width: 100%;
+}
+
+.footer {
+    margin-top: 110px;
+    color: var(--third-grey);
+}
 
