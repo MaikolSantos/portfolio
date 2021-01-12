@@ -127,6 +127,7 @@ img {
 /* Botões */
 .intro .btns-intro {
     grid-area: btns-intro;
+    display: flex;
     align-self: start;
 }
 
@@ -137,7 +138,7 @@ img {
 .intro .btns-intro .btn-raw {
     background: transparent;
     color: black;
-    border: 1px solid black;
+    border: 1px solid black ;
 }
 
 .intro .btns-intro .btn-raw:hover {
@@ -150,4 +151,59 @@ img {
 .intro .img-intro {
     grid-area: img-intro;
     width: 100%;
+}
+
+/* Sobre */
+
+.sobre {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "img-sobre sobre-desc"
+    "img-sobre sobre-desc"
+    "img-sobre btns-sobre"
+    ;
+    margin: 200px 200px 0 200px;
+}
+
+.sobre-desc {
+    grid-area: sobre-desc;
+}
+
+.sobre-desc h2 {
+    font-size: 1.75em;
+    color: var(--second-grey);
+    font-weight: bold;
+}
+
+.sobre-desc h2::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: var(--primary-orange);
+}
+
+.sobre-desc p {
+    font-size: 1.5em;
+    line-height: 1.4;
+    color: var(--second-grey);
+    margin-top: 30px;
+}
+
+
+.btns-sobre {
+    grid-area: btns-sobre;
+    display: flex;
+    align-self: start;
+}
+
+.btns-sobre .btn + .btn {
+    margin-left: 30px;
+}
+
+.img-sobre {
+    grid-area: img-sobre;
 }
