@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"/><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"/><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"/><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="295" viewBox="0 0 200 295">
+  <defs>
+    <filter id="Rectangle_201" x="0" y="0" width="200" height="295" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.541"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_202" data-name="Rectangle 202" width="133" height="175" transform="translate(133 1212)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="css-icon" transform="translate(-103 -1180)">
+    <g transform="matrix(1, 0, 0, 1, 103, 1180)" filter="url(#Rectangle_201)">
+      <rect id="Rectangle_201-2" data-name="Rectangle 201" width="170" height="265" rx="10" transform="translate(12 12)" fill="#f3f3f3"/>
+    </g>
+    <g id="Mask_Group_4" data-name="Mask Group 4" clip-path="url(#clip-path)">
+      <g id="css-icon-2" data-name="css-icon" transform="translate(105.618 1205.618)">
+        <path id="Path_101" data-name="Path 101" d="M160.382,19.559h-133l11.735,133,54.765,15.647,54.765-15.647,11.735-133Z" fill="#0277bd"/>
+        <path id="Path_102" data-name="Path 102" d="M93.882,31.294V156.079l43.812-12.518,9.779-112.268Z" fill="#039be5"/>
+        <path id="Path_103" data-name="Path 103" d="M129.479,50.853h-35.6V66.5H113.05l-1.174,15.647H93.882V97.794h17.212l-1.174,17.6-16.038,5.476V137.3l30.9-10.171,2.738-44.985h0Z" fill="#fff"/>
+        <path id="Path_104" data-name="Path 104" d="M93.882,50.853V66.5H59.068L57.894,50.853ZM75.888,82.147l.782,15.647H93.882V82.147Zm1.565,23.471H61.806l1.174,21.515,30.9,10.171V120.874L77.844,115.4Z" fill="#eee"/>
+      </g>
+    </g>
+    <text id="CSS3" transform="translate(163 1432)" fill="#3f3d56" font-size="28" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">CSS3</tspan></text>
+  </g>
+</svg>

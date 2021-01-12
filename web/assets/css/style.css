@@ -1,7 +1,7 @@
 :root {
-    --primary-orange: #FAA825;
-    --second-orange: #e79a1f;
-    --third-orange: #ffb133;
+    --primary-orange: #F9A826; 
+    --second-orange: #e79a1f;   
+    --third-orange: #ffb53d;
     --primary-grey: #2F2E41;
     --second-grey: #3F3D56;
     --third-grey: #8f8da0;
@@ -47,6 +47,38 @@ img {
 
 .btn:hover {
     background: var(--third-orange);
+}
+
+.btn + .btn {
+    margin-left: 30px;
+}
+
+.btn-raw {
+    background: transparent;
+    color: black;
+    border: 1px solid black ;
+}
+
+.btn-raw:hover {
+    background: transparent;
+    color: var(--primary-orange);
+    border: 1px solid var(--primary-orange)
+}
+
+h2 {
+    font-size: 1.75em;
+    color: var(--second-grey);
+    font-weight: bold;
+}
+
+h2::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: var(--primary-orange);
 }
 
 /* Home*/
@@ -131,22 +163,6 @@ img {
     align-self: start;
 }
 
-.intro .btns-intro .btn + .btn {
-    margin-left: 30px;
-}
-
-.intro .btns-intro .btn-raw {
-    background: transparent;
-    color: black;
-    border: 1px solid black ;
-}
-
-.intro .btns-intro .btn-raw:hover {
-    background: transparent;
-    color: var(--primary-orange);
-    border: 1px solid var(--primary-orange)
-}
-
 /* Imagem Introdução */
 .intro .img-intro {
     grid-area: img-intro;
@@ -163,27 +179,12 @@ img {
     "img-sobre sobre-desc"
     "img-sobre btns-sobre"
     ;
-    margin: 200px 200px 0 200px;
+    padding: 150px 200px;
+    background: rgba(0, 0, 0, 0.02);
 }
 
 .sobre-desc {
     grid-area: sobre-desc;
-}
-
-.sobre-desc h2 {
-    font-size: 1.75em;
-    color: var(--second-grey);
-    font-weight: bold;
-}
-
-.sobre-desc h2::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    border-radius: 50%;
-    background: var(--primary-orange);
 }
 
 .sobre-desc p {
@@ -193,17 +194,42 @@ img {
     margin-top: 30px;
 }
 
-
 .btns-sobre {
     grid-area: btns-sobre;
     display: flex;
-    align-self: start;
-}
-
-.btns-sobre .btn + .btn {
-    margin-left: 30px;
+    align-self: end;
 }
 
 .img-sobre {
     grid-area: img-sobre;
+}
+
+/* Tecnologias */
+.tec {
+    padding: 0px 200px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "tools img-tec"
+    "tools btns-tec"
+    "tools ..."
+    ;
+    position: relative;
+}
+
+.tools {
+    grid-area: tools;
+}
+
+.img-tec {
+    display: block;
+    grid-area: img-tec;
+}
+
+.btns-tec {
+    grid: btns-tec;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-top: 60px;
 }
