@@ -35,6 +35,12 @@ img {
 
 /* Gerais */
 
+p {
+    font-size: 1.5em;
+    line-height: 1.4;
+    color: var(--second-grey);
+}
+
 .btn {
     color: white;
     background: var(--primary-orange);
@@ -48,6 +54,7 @@ img {
 
 .btn:hover {
     background: var(--third-orange);
+    box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .btn + .btn {
@@ -65,7 +72,7 @@ img {
     background: transparent;
     color: var(--primary-orange);
     border: 1px solid var(--primary-orange);
-    box-shadow: 7px 7px 3px 0px rgba(249, 168, 38, 0.5);
+    box-shadow: 5px 5px 3px 0px rgba(249, 168, 38, 0.5);
 }
 
 h2 {
@@ -82,6 +89,14 @@ h2::before {
     margin-right: 10px;
     border-radius: 50%;
     background: var(--primary-orange);
+}
+
+@keyframes arrowBottom {
+    from {
+        bottom: 20px;
+    } to {
+        bottom: 10px;
+    }
 }
 
 /* Home*/
@@ -192,9 +207,6 @@ h2::before {
 }
 
 .sobre-desc p {
-    font-size: 1.5em;
-    line-height: 1.4;
-    color: var(--second-grey);
     margin-top: 30px;
 }
 
@@ -218,6 +230,7 @@ h2::before {
     "tools btns-tec"
     "tools ..."
     ;
+    
 }
 
 .tools {
@@ -228,8 +241,22 @@ h2::before {
 .tools-list {
     display: flex;
     flex-wrap: wrap;
-    width: 320px;
+    justify-content: center;
+    width: 370px;
+    height: 480px;
+    background: rgb(243, 243, 243);
     margin-top: 30px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.tools-list::after {
+    content: '↓';
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: var(--second-grey);
+    animation: arrowBottom .5s ease-in 0s infinite alternate;
 }
 
 .tools-list img {
@@ -244,8 +271,139 @@ h2::before {
 .btns-tec {
     grid: btns-tec;
     display: flex;
-
     justify-content: center;
     margin-top: 120px;
     align-self: end;
+}
+
+/* Projetos */
+.projects {
+    padding: 60px 200px;
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.projects p {
+    margin: 30px 0px 60px 0px;
+}
+
+.projects .job-done:nth-child(odd) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "img-project info-project"
+    "img-project btns-project"
+    ;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 120px;
+}
+
+.projects .job-done:nth-child(even) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "info-project img-project"
+    "btns-project img-project "
+    ;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 120px;
+}
+
+.img-project {
+    grid-area: img-project;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.info-project {
+    grid-area: info-project;
+    align-self: end;
+}
+
+.btns-project {
+    grid-area: btns-project;
+    display: flex;
+    align-items: flex-start;
+}
+
+.projects .info {
+    text-align: center;
+}
+
+.projects .info img {
+    margin: 60px auto 0 auto;
+}
+
+/* Contato */
+.contact {
+    padding: 60px 200px;
+}
+
+.contact p {
+    margin: 20px 0;
+}
+
+.contact .container{
+    display: grid;
+    grid-template-columns: 250px 1fr 500px;
+    margin-top: 30px;
+}
+
+
+.contact .visit .social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "github linkedin"
+    "instagram facebook"
+    ;
+    max-width: 100px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.contact .visit .social img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact .visit .social .github {
+    grid-area: github;
+}
+
+.contact .visit .social .linkedin {
+    grid-area: linkedin;
+}
+
+.contact .visit .social .instagram {
+    grid-area: instagram;
+}
+
+.contact .visit .social .facebook {
+    grid-area: facebook;
+}
+
+
+.contact .mensage img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact > img {
+    max-width: 498px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background: var(--primary-grey);
+}
+
+.footer > p {
+    font-size: 1em;
+    color: var(--primary-orange);
 }
