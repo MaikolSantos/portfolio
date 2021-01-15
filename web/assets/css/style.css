@@ -91,22 +91,12 @@ h2::before {
     background: var(--primary-orange);
 }
 
-@keyframes arrowBottom {
+@keyframes arrow-bottom {
     from {
         bottom: 20px;
     } to {
         bottom: 10px;
     }
-}
-
-/* Home*/
-.home {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas: 
-    "header"
-    "intro"
-    ;
 }
 
 /* Header */
@@ -118,7 +108,13 @@ h2::before {
     padding: 10px 200px;
     align-items: center;
     border-bottom: 1px solid var(--third-grey);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background: white;
 }
+
 
 .header .menu ul{
     display: flex;
@@ -140,10 +136,11 @@ h2::before {
     transition: .1s ease-out;
 }
 
+
 /* Introdução */
 .intro {
     grid-area: intro;
-    margin-top: 60px;
+    margin-top: 120px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -197,7 +194,7 @@ h2::before {
     "img-sobre sobre-desc"
     "img-sobre btns-sobre"
     ;
-    padding: 60px 200px;
+    padding: 100px 200px 60px;
     margin-top: 180px;
     background: rgba(0, 0, 0, 0.02);
 }
@@ -256,7 +253,7 @@ h2::before {
     right: 10px;
     bottom: 10px;
     color: var(--second-grey);
-    animation: arrowBottom .5s ease-in 0s infinite alternate;
+    animation: arrow-bottom .5s ease-in 0s infinite alternate;
 }
 
 .tools-list img {
@@ -278,7 +275,7 @@ h2::before {
 
 /* Projetos */
 .projects {
-    padding: 60px 200px;
+    padding: 100px 200px 60px;
     background: rgba(0, 0, 0, 0.02);
 }
 
@@ -337,7 +334,7 @@ h2::before {
 
 /* Contato */
 .contact {
-    padding: 60px 200px;
+    padding: 100px 200px 60px;
 }
 
 .contact p {
