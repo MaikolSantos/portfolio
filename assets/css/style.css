@@ -672,6 +672,8 @@ h2::before {
         ;
     }
 
+    
+
     .tec {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -708,6 +710,10 @@ h2::before {
 @media (max-width: 560px) {
     .header .menu li + li{
         margin-left: 20px;
+    }
+
+    .sobre {
+        margin-top: 60px;
     }
 
     .contact .container-contact{
@@ -754,6 +760,10 @@ h2::before {
         font-size: 1em;
         line-height: 1.4;
         color: var(--second-grey);
+    }
+
+    .sobre {
+        margin-top: 60px;
     }
 
     .projects .job-done:nth-child(odd) {
