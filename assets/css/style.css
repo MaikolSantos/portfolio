@@ -305,6 +305,10 @@ h2::before {
     margin: 0px;
 }
 
+.job-done .info-project a:hover {
+    color: var(--primary-orange);
+}
+
 .projects .job-done:nth-child(odd) {
     display: grid;
     grid-template-columns: 2fr 1fr;
