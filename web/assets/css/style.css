@@ -334,7 +334,7 @@ h2::before {
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     align-self: center;
-    min-width: 350px;
+    min-width: 310px;
 }
 
 .info-project {
@@ -371,7 +371,7 @@ h2::before {
     grid-template-columns: 120px 1fr minmax(320px, 2fr);
     column-gap: 30px;
     margin-top: 30px;
-    align-items: center;
+    align-items: start;
 }
 
 
@@ -513,14 +513,26 @@ h2::before {
         justify-self: end;
     }
 
+    .projects {
+        padding-top: 100px;
+    }
+
     .contact {
         padding-top: 90px;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .container {
         padding: 10px 20px;
+    }
+
+    .sobre {
+        padding-top: 100px;
+    }
+
+    .projects {
+        padding-top: 100px;
     }
 
     .btns-project {
@@ -543,6 +555,7 @@ h2::before {
         "visit mensage"
         "img-contact img-contact"
         ;
+        justify-content: center;
     }
 
     .img-contact {
