@@ -432,6 +432,10 @@ h2::before {
     color: var(--primary-orange);
 }
 
+.footer img {
+    margin-left: 10px;
+}
+
 @media (max-width: 1260px) {
     .container {
         padding: 10px 100px;
