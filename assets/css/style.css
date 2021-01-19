@@ -735,7 +735,17 @@ h2::before {
         "mensage"
         "img-contact"
         ;
+        justify-items: center;
     }
+
+    .contact .container-contact p {
+        text-align: center;
+    }
+
+    .contact .container-contact img {
+        margin: 0 auto;
+    }
+
 }
 
 @media (max-width: 490px) {
