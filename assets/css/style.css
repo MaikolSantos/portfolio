@@ -254,7 +254,6 @@ h2::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
     width: 370px;
     height: 480px;
     background: rgb(243, 243, 243);
